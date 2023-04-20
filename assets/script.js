@@ -1,6 +1,24 @@
+//day js code to display day
+var currentDay = $('#currentDay');
+var today = dayjs().format('dddd, MMMM D');
+currentDay.text(today);
+//day js code to find current hour
+var currentTime = dayjs().format('H');
+console.log(currentTime);
+
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
+var hours = $('#root').children();
+console.log($('#root').children());
+//for loop to check time and apply past present or future styles
+
+// $(function (checkTime) {
+//   for (var i = 0; i < hours.length; i++)
+
+// })
+
+
 $(function () {
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
